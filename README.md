@@ -3,7 +3,7 @@ About sphinx-simplepdf-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-simplepdf-feedstock/blob/main/LICENSE.txt)
 
-Home: https://sphinx-simplepdf.readthedocs.io
+Home: https://sphinx-simplepdf.readthedocs.io/
 
 Package license: MIT
 
