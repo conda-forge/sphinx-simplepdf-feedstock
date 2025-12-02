@@ -2,18 +2,18 @@ schema_version: 1
 
 context:
   name: sphinx-simplepdf
-  version: 1.6.0
+  version: "1.7.0"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sphinx-simplepdf-${{ version }}.tar.gz
-  sha256: bc8412c6b029886ae2e9241612dfc59c4cd35fa8cf2e7eb987c14126d422a939
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 4e2d323e30cabdff53c12abf1694a9029e667f9a01db343c49341180324caaef
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
